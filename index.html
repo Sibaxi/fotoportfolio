@@ -8,81 +8,359 @@
   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
     integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js"></script>
 
 
 </head>
 
-<body class="bg-no-repeatw " style="background-color: #d9d9d9;
-    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);">
-
-  <div class="info w-full flex items-center justify-center content-center flex-wrap">
-
-
-    <h1 class=" leading-loose w-full text-center" style="font-size: 8rem;">Portfolio Slik </h1>
-
-    <h2 class="text-lg uppercase w-full text-center" style="letter-spacing: 2rem;">Manuel Felda</h2>
-
-  </div>
+<body class="h-full">
+  <div class="bg-no-repeat" style="background-color: #d9d9d9;
+  background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);">
 
 
-  <div class="section w-full h-screen">
+    <div class="menu flex flex-col fixed justify-center h-full z-50 opacity-0 pointer-events-none transition">
+      <a href="#predmeti" class="menu__button flex items-center ml-4 mb-12">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" version="1.1" class="transition menu__icon h-2 w-2">
+          <circle cx="5" cy="5" r="4" stroke="black" stroke-width="0.5" />
+        </svg> <span class="menu__title transition uppercase ml-2 text-xs "
+          style="letter-spacing: 0.2rem;">Predmeti</span>
+      </a>
+      <a href="#portreti" class="menu__button flex items-center ml-4 mb-12">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" version="1.1" class="transition menu__icon h-2 w-2">
+          <circle cx="5" cy="5" r="4" stroke="black" stroke-width="0.5" />
+        </svg> <span class="menu__title transition uppercase ml-2 text-xs "
+          style="letter-spacing: 0.2rem;">Portreti</span>
+      </a>
+      <a href="#figure" class="menu__button flex items-center ml-4 mb-12">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" version="1.1" class="transition menu__icon h-2 w-2">
+          <circle cx="5" cy="5" r="4" stroke="black" stroke-width="0.5" />
+        </svg> <span class="menu__title transition uppercase ml-2 text-xs "
+          style="letter-spacing: 0.2rem;">Figure</span>
+      </a>
+      <a href="#akti" class="menu__button flex items-center ml-4 mb-12">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" version="1.1" class="transition menu__icon h-2 w-2">
+          <circle cx="5" cy="5" r="4" stroke="black" stroke-width="0.5" />
+        </svg> <span class="menu__title transition uppercase ml-2 text-xs " style="letter-spacing: 0.2rem;">Akti</span>
+      </a>
+      <a href="#fotografskeTeme" class="menu__button flex items-center ml-4 mb-12">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" version="1.1" class="transition menu__icon h-2 w-2">
+          <circle cx="5" cy="5" r="4" stroke="black" stroke-width="0.5" />
+        </svg> <span class="menu__title transition uppercase ml-2 text-xs " style="letter-spacing: 0.2rem;">Fotografske
+          teme</span>
+      </a>
+      <a href="#poljubneFotografije" class="menu__button flex items-center ml-4 mb-12">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" version="1.1" class="transition menu__icon h-2 w-2">
+          <circle cx="5" cy="5" r="4" stroke="black" stroke-width="0.5" />
+        </svg> <span class="menu__title transition uppercase ml-2 text-xs " style="letter-spacing: 0.2rem;">Poljubne
+          fotografije</span>
+      </a>
 
-    <div class="section__text flex flex-wrap justify-cneter content-center w-2/3 mx-auto">
-      <h2 class="text-xs uppercase w-full" style="letter-spacing: 0.8rem;">Studijske fotografije</h2>
-      <h1 class=" leading-loose w-full" style="font-size: 6rem;line-height: 6rem;">Predmeti</h1>
     </div>
 
-    <div class="section__images">
+    
 
-      <div class="imgContainer w-1/2 mx-auto mt-64" style="">
-        <img src="slike/predmeti/1.jpg" class=" object-contain " style="max-height: 90vh;">
-      </div>
 
-      <div class="imgContainer w-1/2 mx-auto mt-64" style="">
-        <img src="slike/predmeti/2.jpg" class="object-contain" style="max-height: 90vh;">
-      </div>
 
-      <div class="imgContainer w-1/2 mx-auto mt-64" style="">
-        <img src="slike/predmeti/3.jpg" class="object-contain" style="max-height: 90vh;">
-      </div>
 
-      <div class="imgContainer w-1/2 mx-auto mt-64" style="">
-        <img src="slike/predmeti/4.jpg" class="object-contain" style="max-height: 90vh;">
-      </div>
+    <div class="info w-full h-screen flex items-center justify-center content-center flex-wrap  rellax relative fade-in"
+      data-rellax-speed="10">
 
-      <div class="imgContainer w-1/2 mx-auto mt-64" style="">
-        <img src="slike/predmeti/5.jpg" class="object-contain" style="max-height: 90vh;">
+
+      <h1 class=" leading-loose w-full text-center" style="font-size: 8rem;">Portfolio Slik </h1>
+
+      <h2 class="text-lg uppercase w-full text-center" style="letter-spacing: 2rem;">Manuel Felda</h2>
+
+
+      <div class="absolute bottom-0 w-full flex justify-center">
+        <div class="mouse flex justify-center transition">
+          <div class="mouse-icon">
+            <span class="mouse-wheel"></span>
+          </div>
+        </div>
       </div>
 
     </div>
 
 
+    <div id="predmeti" class="section w-full relative">
 
+      <div class="section__text flex flex-wrap justify-center content-center w-3/4 mx-auto sticky z-20"
+        style="mix-blend-mode: difference; top:40vh;">
+        <h2 class="text-xs text-right uppercase w-full text-white" style="letter-spacing: 0.8rem;">Studijske fotografije
+        </h2>
+        <h1 class="leading-loose text-right w-full text-white" style="font-size: 6rem;line-height: 6rem;">Predmeti</h1>
+      </div>
+
+      <div class="section__images relative z-10">
+
+        <div class="imgContainer w-1/2 mx-auto mt-64">
+          <img src="slike/predmeti/1.jpg" class=" object-contain " style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/predmeti/2.jpg" class="object-contain" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/predmeti/3.jpg" class="object-contain" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/predmeti/4.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/predmeti/5.jpg" class="object-contain" style="max-height: 90vh;">
+        </div>
+
+      </div>
+    </div>
+    <div id="portreti" class="section w-full relative mt-64">
+
+      <div class="section__text flex flex-wrap justify-cneter content-center w-2/3 mx-auto sticky top-0 z-20"
+        style="mix-blend-mode: difference; top:40vh;">
+        <h2 class="text-xs text-right uppercase w-full text-white " style="letter-spacing: 0.8rem; ">Studijske
+          fotografije</h2>
+        <h1 class=" leading-loose text-right w-full text-white" style="font-size: 6rem;line-height: 6rem;">Portreti</h1>
+      </div>
+
+      <div class="section__images relative z-10">
+
+        <div class="imgContainer w-1/2 mx-auto mt-64">
+          <img src="slike/Portreti/6.jpg" class=" object-contain " style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Portreti/7.jpg" class="object-contain" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Portreti/8.jpg" class="object-contain" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Portreti/9.jpg" class="object-contain" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Portreti/10.jpg" class="object-contain" style="max-height: 90vh;">
+        </div>
+
+
+      </div>
+    </div>
+    <div id="figure" class="section w-full mt-64 relative">
+
+      <div class="section__text flex flex-wrap justify-center content-center w-3/4 mx-auto sticky z-20"
+        style="mix-blend-mode: difference; top:40vh;">
+        <h2 class="text-xs text-right uppercase w-full text-white" style="letter-spacing: 0.8rem;">Studijske fotografije
+        </h2>
+        <h1 class="leading-loose text-right w-full text-white" style="font-size: 6rem;line-height: 6rem;">Figure</h1>
+      </div>
+
+      <div class="section__images relative z-10">
+
+        <div class="imgContainer w-1/2 mx-auto mt-64">
+          <img src="slike/Figure/11.jpg" class=" object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Figure/12.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Figure/13.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Figure/14.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Figure/15.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+      </div>
+    </div>
+    <div id="akti" class="section w-full mt-64 relative">
+
+      <div class="section__text flex flex-wrap justify-center content-center w-3/4 mx-auto sticky z-20"
+        style="mix-blend-mode: difference; top:40vh;">
+        <h2 class="text-xs text-right uppercase w-full text-white" style="letter-spacing: 0.8rem;">Studijske fotografije
+        </h2>
+        <h1 class="leading-loose text-right w-full text-white" style="font-size: 6rem;line-height: 6rem;">Akti</h1>
+      </div>
+
+      <div class="section__images relative z-10">
+
+        <div class="imgContainer w-1/2 mx-auto mt-64">
+          <img src="slike/Akti/16.jpg" class=" object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Akti/17.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Akti/18.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Akti/19.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Akti/20.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+      </div>
+    </div>
+    <div id="fotografskeTeme" class="section w-full mt-64 relative">
+
+      <div class="section__text flex flex-wrap justify-center content-center w-3/4 mx-auto sticky z-20"
+        style="mix-blend-mode: difference; top:40vh;">
+
+        <h1 class="leading-loose text-right w-full text-white" style="font-size: 6rem;line-height: 6rem;">Fotografske
+          <br> teme</h1>
+      </div>
+
+      <div class="section__images relative z-10">
+
+        <div class="imgContainer w-1/2 mx-auto mt-64">
+          <img src="slike/Fotografske teme/21.jpg" class=" object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Fotografske teme/22.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Fotografske teme/23.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Fotografske teme/24.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Fotografske teme/25.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64">
+          <img src="slike/Fotografske teme/26.jpg" class=" object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Fotografske teme/27.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Fotografske teme/28.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Fotografske teme/29.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Fotografske teme/30.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Fotografske teme/31.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Fotografske teme/32.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Fotografske teme/33.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Fotografske teme/34.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Fotografske teme/35.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Fotografske teme/36.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Fotografske teme/37.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Fotografske teme/38.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Fotografske teme/39.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Fotografske teme/40.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+      </div>
+    </div>
+    <div id="poljubneFotografije" class="section w-full mt-64 relative pb-32">
+
+      <div class="section__text flex flex-wrap justify-center content-center w-3/4 mx-auto sticky z-20"
+        style="mix-blend-mode: difference; top:40vh;">
+
+        <h1 class="leading-loose text-right w-full text-white" style="font-size: 6rem;line-height: 6rem;">Poljubne<br>
+          fotografije</h1>
+      </div>
+
+      <div class="section__images relative z-10">
+
+        <div class="imgContainer w-1/2 mx-auto mt-64">
+          <img src="slike/Poljubne fotografije/41.jpg" class=" object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Poljubne fotografije/42.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Poljubne fotografije/43.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Poljubne fotografije/44.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Poljubne fotografije/45.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64">
+          <img src="slike/Poljubne fotografije/46.jpg" class=" object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Poljubne fotografije/47.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Poljubne fotografije/48.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Poljubne fotografije/49.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+        <div class="imgContainer w-1/2 mx-auto mt-64" style="">
+          <img src="slike/Poljubne fotografije/50.jpg" class="object-contain mx-auto" style="max-height: 90vh;">
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
   </div>
-
-
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script src="script.js"></script>
 </body>
 
 </html>

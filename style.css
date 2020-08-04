@@ -1,14 +1,10 @@
-@tailwind base;
-
-@tailwind components;
-
-@tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:700,900&display=swap');
 
 
 html,body {
-    margin-0
+    margin:0;
+    scroll-behavior: smooth;
     
 }
 
@@ -16,31 +12,89 @@ h1{
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
-
-/* .section{
-    perspective: 1px;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    
+.transition{
+    transition: all 300ms;
 }
 
-
-
-.section__text{
-    transform: translateZ(0);
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    
+.menu__title{
+    opacity: 0;
+    pointer-events: none;
+}
+.menu__button:hover .menu__title,.menu__button.active .menu__title {
+    opacity: 1;
+    pointer-events: all;
+}
+.menu__icon{
+    fill: transparent;
 }
 
-.section__images{
-    transform: translateZ(-2px) scale(3);
-    position: absolute;
-    
-    
-} */
+.menu__button:hover .menu__icon,.menu__button.active .menu__icon{
+    fill: black;
+}
+
+.mouse{
+    margin: 50px auto;
+    width: 100px;
+  }.mouse-icon{
+     width: 25px;
+     height: 45px;
+     border: 1px solid #6f6f6f;
+     border-radius: 15px;
+     cursor: pointer;
+     position: relative;
+     text-align: center;
+     -webkit-backface-visibility: hidden;
+     
+  }.mouse-wheel{
+    height: 6px;
+    margin: 2px auto 0;
+    display: block;
+    width: 2px;
+    background-color: #6f6f6f;
+    border-radius: 50%;
+    -webkit-animation: 1.6s ease infinite wheel-up-down;
+   -moz-animation: 1.6s ease infinite wheel-up-down;
+    animation: 1.6s ease infinite wheel-up-down;
+  }
+  @-webkit-keyframes wheel-up-down {
+      0% {
+          margin-top: 2px;
+          opacity: 0;
+      }
+      30% {
+          opacity: 1;
+      }
+      100% {
+          margin-top: 20px;
+          opacity: 0;
+      }
+  }@-moz-keyframes wheel-up-down {
+      0% {
+          margin-top: 2px;
+          opacity: 0;
+      }
+      30% {
+          opacity: 1;
+      }
+      100% {
+          margin-top: 20px;
+          opacity: 0;
+      }
+  }@keyframes wheel-up-down {
+      0% {
+          margin-top: 2px;
+          opacity: 0;
+      }
+      30% {
+          opacity: 1;
+      }
+      100% {
+          margin-top: 20px;
+          opacity: 0;
+      }
+  }
+
+  .fade-in{animation:fade-in 2s cubic-bezier(.39,.575,.565,1.000) both}
+
+
+@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
